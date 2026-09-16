@@ -3,6 +3,8 @@
 ¡Bienvenido/a a este espacio! Este repositorio está destinado exclusivamente a la publicación, organización y preservación de **material académico**. Aquí encontrarás recursos teóricos, guías prácticas, referencias bibliográficas analizadas y notas de investigación enfocadas en el desarrollo de software y la ingeniería de sistemas.
 
 ---
+# 📚 Libros 
+<embed src="ruta/al/archivo.pdf" type="application/pdf" width="100%" height="600px" />
 
 ## 🎯 Objetivo del Espacio
 Facilitar el acceso a documentación técnica rigurosa, promoviendo el aprendizaje continuo y sirviendo como una base de conocimiento confiable para estudiantes, desarrolladores e investigadores.
