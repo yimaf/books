@@ -4,7 +4,7 @@
 
 ---
 # 📚 Libros 
-<embed src="https://github.com/yimaf/books/blob/main/Libro%20Patrones%20Dise%C3%B1o%20Estructurales%20GitHub.pdf" type="application/pdf" width="100%" height="600px" />
+<embed src="blob/main/Libro%20Patrones%20Dise%C3%B1o%20Estructurales%20GitHub.pdf" type="application/pdf" width="100%" height="600px" />
 
 ## 🎯 Objetivo del Espacio
 Facilitar el acceso a documentación técnica rigurosa, promoviendo el aprendizaje continuo y sirviendo como una base de conocimiento confiable para estudiantes, desarrolladores e investigadores.
