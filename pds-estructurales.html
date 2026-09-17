@@ -3,37 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visor de PDFs en Paralelo</title>
+    <title>Visualizador de Documento</title>
     <style>
-        /* Configura la pantalla completa y alinea los elementos de lado a lado */
+        /* Hace que el documento ocupe exactamente toda la ventana del navegador */
         body, html {
             margin: 0;
             padding: 0;
             height: 100%;
             overflow: hidden;
-            display: flex;
-            flex-direction: row; /* Alineación horizontal (Izquierda a Derecha) */
-            background-color: #525659;
+            background-color: #525659; /* Color gris estándar de lectores de PDF */
+            font-family: Arial, sans-serif;
         }
-        /* Cada iframe ocupará exactamente la mitad del ancho de la pantalla */
-        iframe {
+        object {
             width: 100%;
-            height: 100%; 
+            height: 100%;
             border: none;
         }
-        /* Línea divisoria vertical entre ambos PDFs */
-        .divisor {
-            width: 4px;
-            height: 100%;
-            background-color: #333;
+        /* Estilo para el mensaje de respaldo por si falla la carga nativa */
+        .fallback {
+            color: white;
+            text-align: center;
+            padding: 40px;
+        }
+        .btn-download {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background-color: #24292e;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
 
-    <!-- PDF de la Izquierda - Cambia "documento1.pdf" por tu archivo -->
-    <iframe src="Libro%20Patrones%20Dise%C3%B1o%20Estructurales%20GitHub.pdf"></iframe>
+    <!-- Cambia "./tu-archivo.pdf" por el nombre exacto de tu documento en GitHub -->
+    <object data="Libro%20Patrones%20Dise%C3%B1o%20Estructurales%20GitHub.pdf" type="application/pdf">
+        <!-- Este mensaje solo aparecerá si el navegador no puede renderizar el PDF -->
+        <div class="fallback">
+            <p>Este navegador no soporta la visualización directa de PDFs.</p>
+            <a class="btn-download" href="./tu-archivo.pdf" download>Descargar Documento</a>
+        </div>
+    </object>
 
-
-    </body>
+</body>
 </html>
